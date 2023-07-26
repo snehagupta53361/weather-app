@@ -1,0 +1,44 @@
+How the weather app will look like or what it would contain
+In first part:
+    1. city
+    2. temp
+    3. description
+    4. high and low
+
+In second part:
+    1. temp-img hour forecast
+
+In third part: 
+    1. 5 days forecast which again contain day date and high and low
+
+In fourth part 
+    1. high and low detail
+    2. feel like and humidity
+
+"API which is required to make a weather app: open weather: api key will be needed to communicate with that website
+    1. current weather data
+    2. 5day/ 3hour forecast
+It will contain following parameters: latitude longitude unit apiid which is api key lang in which lang we want description
+
+we will get some response from that api 
+
+it will be in 40 field each divided in 12 parts that is by three hours
+there is json hero website where we will put our json and it will convert it in object
+
+in the cod inside weather we will get the icon
+weather icons
+
+Api key: 41072b4fd285388735c295e54a1c0977
+url for current weather according to city: https://api.openweathermap.org/data/2.5/weather?q={city name}&appid={API key}
+url for hourly forecast: api.openweathermap.org/data/2.5/forecast?q={city name}&appid={API key}
+
+to show dynamic information according to city with the help of direct geocoding api
+
+when we want to wait untill the user typed the complete name we should wait for the request to happen: we can do it with debounce functionality
+
+what is debounce function is?
+debouncing is to delay the eecution f a function until ater a certain amount of time has passed since the last invocation of the function
+
+browser location using geolocationn: 
+
+    navigator.geolocation.getCurrentPosition(callbackfn which accepts coords object)
